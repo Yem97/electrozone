@@ -4,7 +4,8 @@
 FROM node:20-bullseye-slim AS assets
 WORKDIR /app
 COPY package.json package-lock.json* ./
-RUN npm ci
+# --legacy-peer-deps resolves the @vitejs/plugin-vue@4 / vite@6 peer conflict
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 

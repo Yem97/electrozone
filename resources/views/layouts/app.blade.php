@@ -140,6 +140,29 @@
             font-size: 1.5rem;
         }
 
+        /* ── User initials avatar ── */
+        .user-avatar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1e293b;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 1;
+            flex-shrink: 0;
+            border: 2px solid rgba(255,255,255,0.4);
+            text-transform: uppercase;
+        }
+        .user-avatar--lg {
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+        }
+
         @media (max-width: 768px) {
             .navbar-nav {
                 background-color: rgba(0, 0, 0, 0.1);
@@ -277,12 +300,18 @@
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="bi bi-person-circle me-2"></i>
+                                    <span class="user-avatar me-2" aria-hidden="true">{{ strtoupper(substr(Auth::user()->name, 0, 1)) }}</span>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <h6 class="dropdown-header">Welcome, {{ Auth::user()->name }}!</h6>
+                                    <div class="px-3 py-2 d-flex align-items-center gap-2">
+                                        <span class="user-avatar user-avatar--lg" aria-hidden="true">{{ strtoupper(substr(Auth::user()->name, 0, 1)) }}</span>
+                                        <div>
+                                            <div class="fw-semibold" style="font-size:0.9rem;">{{ Auth::user()->name }}</div>
+                                            <div class="text-muted" style="font-size:0.75rem;">{{ Auth::user()->email }}</div>
+                                        </div>
+                                    </div>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}"
                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

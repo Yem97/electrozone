@@ -111,9 +111,41 @@
                 </div>
             </div>
 
-            <!-- Optional: Add bottom image or promotion -->
+            <!-- Avatar illustration -->
             <div class="text-center mt-4">
-                <img src="{{ asset('images/signup-illustration.png') }}" class="img-fluid rounded shadow" alt="Signup Illustration" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="180" height="180" aria-label="New user illustration" role="img">
+                    <defs>
+                        <linearGradient id="reg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea"/>
+                            <stop offset="100%" style="stop-color:#764ba2"/>
+                        </linearGradient>
+                        <linearGradient id="reg-skin" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fde68a"/>
+                            <stop offset="100%" style="stop-color:#fbbf24"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="100" fill="url(#reg-bg)"/>
+                    <!-- Body / shirt -->
+                    <ellipse cx="100" cy="165" rx="52" ry="38" fill="rgba(255,255,255,0.25)"/>
+                    <!-- Head -->
+                    <circle cx="100" cy="82" r="34" fill="url(#reg-skin)"/>
+                    <!-- Hair -->
+                    <ellipse cx="100" cy="58" rx="34" ry="18" fill="#1e293b"/>
+                    <!-- Eyes -->
+                    <circle cx="89" cy="80" r="4" fill="#1e293b"/>
+                    <circle cx="111" cy="80" r="4" fill="#1e293b"/>
+                    <!-- Eye shine -->
+                    <circle cx="91" cy="78" r="1.5" fill="white"/>
+                    <circle cx="113" cy="78" r="1.5" fill="white"/>
+                    <!-- Smile -->
+                    <path d="M90 92 Q100 102 110 92" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <!-- Plus / add icon badge -->
+                    <circle cx="155" cy="45" r="22" fill="#10b981"/>
+                    <line x1="155" y1="33" x2="155" y2="57" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    <line x1="143" y1="45" x2="167" y2="45" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <p class="text-muted small mt-2">Join thousands of happy customers</p>
             </div>
 
         </div>

@@ -76,7 +76,11 @@
             <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                 <div class="d-flex flex-column align-items-center">
                     @if($item->image)
-                        <img src="{{ asset('storage/' . $item->image) }}" class="d-block" style="max-height: 300px; object-fit: contain;" alt="{{ $item->name }}">
+                        <img src="{{ asset('storage/' . $item->image) }}"
+                             class="d-block mx-auto"
+                             style="max-height: 300px; object-fit: contain;"
+                             alt="{{ $item->name }}"
+                             onerror="this.style.display='none'">
                     @endif
                     <div class="text-center mt-3">
                         <h5 class="fw-bold">{{ $item->name }}</h5>
@@ -112,8 +116,26 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex">
                 <div class="card w-100 border-0 shadow-sm hover-shadow position-relative">
                     @if($item->image)
-                        <img src="{{ asset('storage/' . $item->image) }}" class="card-img-top img-fluid" alt="{{ $item->name }}" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('storage/' . $item->image) }}"
+                             class="card-img-top img-fluid"
+                             alt="{{ $item->name }}"
+                             style="height: 200px; object-fit: cover;"
+                             onerror="this.replaceWith(document.getElementById('no-img-tpl').content.cloneNode(true))">
+                    @else
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="height:200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#cbd5e1" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/>
+                            </svg>
+                        </div>
                     @endif
+                    {{-- fallback template used by onerror above --}}
+                    <template id="no-img-tpl">
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="height:200px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#cbd5e1" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5z"/>
+                            </svg>
+                        </div>
+                    </template>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title fw-semibold text-dark">{{ $item->name }}</h5>
                         <p class="card-text small text-muted">{{ Str::limit($item->description, 60) }}</p>

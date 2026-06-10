@@ -10,11 +10,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <h1 class="fw-bold display-4 mb-3">
-                    <i class="bi bi-lightning-fill text-warning me-3"></i>
-                    Welcome to ElectroZone
+                <h1 class="fw-bold display-4 mb-3 d-flex align-items-center justify-content-center gap-3">
+                    @include('partials.brand-mark', ['size' => 56])
+                    Welcome to HerdZone
                 </h1>
-                <p class="lead fs-5 mb-5">Discover premium electronics and hardware with lightning-fast delivery and unbeatable prices.</p>
+                <p class="lead fs-5 mb-5">Discover cattle of different breeds with lightning-fast delivery and unbeatable prices.</p>
 
                 <form method="GET" class="row g-3 justify-content-center">
                     <div class="col-lg-4 col-md-6">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="input-group input-group-lg shadow-sm">
-                            <input type="text" name="q" class="form-control" placeholder="Search for products..." value="{{ request('q') }}" style="border: none; border-radius: 15px 0 0 15px;">
+                            <input type="text" name="q" class="form-control" placeholder="Search for cattle..." value="{{ request('q') }}" style="border: none; border-radius: 15px 0 0 15px;">
                             <button class="btn btn-warning fw-bold px-4" type="submit" style="border-radius: 0 15px 15px 0; border: none;">
                                 <i class="bi bi-search me-2"></i>Search
                             </button>
@@ -46,7 +46,7 @@
                             <i class="bi bi-truck fs-3 me-2"></i>
                         </div>
                         <h6 class="fw-bold">Fast Delivery</h6>
-                        <small class="opacity-75">Free shipping on orders over FCFA 500,000</small>
+                        <small class="opacity-75">Free delivery on orders over FCFA 500,000</small>
                     </div>
                     <div class="col-md-4">
                         <div class="d-flex align-items-center justify-content-center mb-2">
@@ -167,8 +167,8 @@
 <div class="bg-dark text-light py-5 px-3 rounded mb-4">
     <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-    <img src="{{ asset('images/logo1.png') }}" alt="ElectroZone" style="height: 40px;" class="me-2">
-    <span class="fw-bold fs-5 text-white">Electro<span class="text-primary">Zone</span></span>
+    @include('partials.brand-mark', ['size' => 40, 'class' => 'me-2'])
+    <span class="fw-bold fs-5 text-white">Herd<span class="text-primary">Zone</span></span>
                </a><br>
         <div class="row row-cols-1 row-cols-md-4 g-4 text-sm">
 

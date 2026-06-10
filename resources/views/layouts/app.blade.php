@@ -30,7 +30,7 @@
     
     <style>
         :root {
-            --primary-color: #2563eb;
+            --primary-color: #2F9E63;
             --secondary-color: #64748b;
             --success-color: #059669;
             --danger-color: #dc2626;
@@ -50,7 +50,7 @@
         }
 
         .navbar {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%) !important;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
@@ -103,13 +103,13 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
             color: white;
         }
 
         .btn-primary:hover {
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 12px rgba(47, 158, 99, 0.4);
         }
 
         .floating-cart {
@@ -117,7 +117,7 @@
             bottom: 2rem;
             right: 2rem;
             z-index: 1000;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
             color: white;
             border-radius: 50%;
             width: 60px;
@@ -194,10 +194,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark shadow-lg">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-                    <img src="{{ asset('images/social/platform.png') }}" alt="ElectroZone" style="height: 45px;" class="me-3">
+                    @include('partials.brand-mark', ['size' => 45, 'class' => 'me-3'])
                     <div>
-                        <span class="fw-bold fs-4">Electro<span style="color: #fbbf24;">Zone</span></span>
-                       
+                        <span class="fw-bold fs-4">Herd<span style="color: #fbbf24;">Zone</span></span>
+
                     </div>
                 </a>
                 
@@ -339,8 +339,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <h5 class="fw-bold mb-3" style="color: #ffffff !important;">ElectroZone</h5>
-                        <p style="color: #cccccc !important;">Your trusted partner for quality electronics and hardware. Fast delivery, secure payment, and excellent customer service.</p>
+                        <h5 class="fw-bold mb-3" style="color: #ffffff !important;">HerdZone</h5>
+                        <p style="color: #cccccc !important;">Your trusted marketplace for quality cattle and livestock. Verified sellers, fair prices, and reliable delivery across Cameroon.</p>
                     </div>
                     <div class="col-md-4 mb-4">
                         <h6 class="fw-bold mb-3" style="color: #ffffff !important;">Quick Links</h6>
@@ -361,7 +361,7 @@
                 </div>
                 <hr class="my-4" style="border-color: #555555 !important;">
                 <div class="text-center" style="color: #cccccc !important;">
-                    <p>&copy; {{ date('Y') }} ElectroZone. All rights reserved.</p>
+                    <p>&copy; {{ date('Y') }} HerdZone. All rights reserved.</p>
                 </div>
             </div>
         </footer>

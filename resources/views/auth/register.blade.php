@@ -116,8 +116,8 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="180" height="180" aria-label="New user illustration" role="img">
                     <defs>
                         <linearGradient id="reg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#667eea"/>
-                            <stop offset="100%" style="stop-color:#764ba2"/>
+                            <stop offset="0%" style="stop-color:#2F9E63"/>
+                            <stop offset="100%" style="stop-color:#1B4332"/>
                         </linearGradient>
                         <linearGradient id="reg-skin" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" style="stop-color:#fde68a"/>

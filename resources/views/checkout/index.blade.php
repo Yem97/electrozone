@@ -19,7 +19,7 @@
     }
 
     .checkout-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
         color: white;
         padding: 2rem;
         text-align: center;
@@ -71,7 +71,7 @@
     }
 
     .step-number {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
         color: white;
         width: 2.5rem;
         height: 2.5rem;
@@ -117,9 +117,9 @@
 
     .form-control:focus {
         outline: none;
-        border-color: #667eea;
+        border-color: #2F9E63;
         background: white;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        box-shadow: 0 0 0 3px rgba(47, 158, 99, 0.1);
         transform: translateY(-1px);
     }
 
@@ -263,7 +263,7 @@
     }
 
     .continue-shopping-btn {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
         color: white;
         border: none;
         border-radius: 0.75rem;
@@ -277,7 +277,7 @@
 
     .continue-shopping-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px -5px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 8px 25px -5px rgba(47, 158, 99, 0.4);
         color: white;
         text-decoration: none;
     }

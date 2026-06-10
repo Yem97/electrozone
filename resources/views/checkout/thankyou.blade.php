@@ -161,7 +161,7 @@
 
     .info-card h5 i {
         margin-right: 0.5rem;
-        color: #667eea;
+        color: #2F9E63;
         font-size: 1.75rem;
     }
 
@@ -186,7 +186,7 @@
     }
 
     .step-icon {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
         color: white;
         width: 60px;
         height: 60px;
@@ -213,7 +213,7 @@
     }
 
     .btn-primary-custom {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
         color: white;
         border: none;
         border-radius: 0.75rem;
@@ -228,7 +228,7 @@
 
     .btn-primary-custom:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 10px 25px -5px rgba(47, 158, 99, 0.4);
         color: white;
         text-decoration: none;
     }
@@ -253,7 +253,7 @@
     }
 
     .contact-info a {
-        color: #667eea;
+        color: #2F9E63;
         text-decoration: none;
         font-weight: 600;
     }
@@ -403,7 +403,7 @@
                 <div class="contact-info">
                     <p>
                         Need help? Contact us at 
-                        <a href="mailto:support@electrozone.com">support@electrozone.com</a>
+                        <a href="mailto:support@herdzone.com">support@herdzone.com</a>
                         or call <a href="tel:+1234567890">+237 678 50 9936</a>
                     </p>
                 </div>

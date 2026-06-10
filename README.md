@@ -1,7 +1,7 @@
-# ElectroZone
+# HerdZone
 
-An electronics e-commerce store built with **Laravel 12 / PHP 8.2**. Customers browse
-equipment by category, manage a cart, and check out; staff manage catalog, orders, users
+A cattle & livestock marketplace built with **Laravel 12 / PHP 8.2**. Customers browse
+livestock by category, manage a cart, and check out; staff manage catalog, orders, users
 and roles from an admin area.
 
 ## Stack
@@ -65,7 +65,7 @@ the app.
 3. Set the service variables (use Railway references for the DB):
 
    ```
-   APP_NAME=ElectroZone
+   APP_NAME=HerdZone
    APP_ENV=production
    APP_DEBUG=false
    APP_KEY=base64:...            # generate with `php artisan key:generate --show`

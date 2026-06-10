@@ -189,7 +189,7 @@
 
 <style>
 .bg-gradient-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2F9E63 0%, #1B4332 100%);
 }
 
 .cart-item {
